@@ -52,8 +52,8 @@ $ ->
   $(document).on 'change','.has_many_container[data-sortable] :input[name$="[_destroy]"]', ->
     recompute_positions $(@).closest '.has_many'
 
-  init_sortable()
-  $(document).on 'has_many_add:after', '.has_many_container', init_sortable
+  # init_sortable()
+  # $(document).on 'has_many_add:after', '.has_many_container', init_sortable
 
 
 init_sortable = ->
